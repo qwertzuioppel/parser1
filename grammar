@@ -1,0 +1,3 @@
+<factor>::="TT_INT"|"TT_LPAREN"<expression>"TT_RPAREN"
+<term>::=<factor>|<factor>"TT_MUL"<term>
+<expression>::=<term>|<factor>"TT_ADD"<term>
