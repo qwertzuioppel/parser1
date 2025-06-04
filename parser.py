@@ -19,8 +19,8 @@ class Lexer:
         if copy[0] in "\n \t":
             while self.string and self.string[0] in "\n \t":
                 self.string = self.string[1:]
-            token, copy = self.lex()
-        elif copy[0] in "012456789":
+            copy = self.string
+        elif copy[0] in "0123456789":
             res = ""
             while copy and copy[0] in "0123456789":
                 res += copy[0]
